@@ -107,3 +107,9 @@
 
 /curly:
     redirect: /blog/where-a-curly-bracket-belongs
+
+/blog/tackling_repsonsive_images-part_2:
+    redirect: /blog/tackling_responsive_images-part_2
+
+/blog/tackling_repsonsive_images-part_1:
+    redirect: /blog/tackling_responsive_images-part_1

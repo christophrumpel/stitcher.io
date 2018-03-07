@@ -9,7 +9,7 @@ entries:
             og:description: How to render responsive images in an optimal way.
         previousPost:
             title: Tackling responsive images
-            id: tackling_repsonsive_images-part_1
+            id: tackling_responsive_images-part_1
 
     mysql-show-foreign-key-errors:
         date: 2018-02-13
@@ -119,12 +119,12 @@ entries:
     responsive-images-as-css-background:
         date: 2017-06-24
         type: piece of code
-        title: Repsonsive images as CSS background
+        title: Responsive images as CSS background
         teaserTitle: Responsive CSS
         teaser: Integrating the Responsive Images spec together with CSS backgrounds.
         content: data/blog/2017-06-24-responsive-images-as-css-background.md
         meta:
-            title: Repsonsive images as CSS background - Piece of Code
+            title: Responsive images as CSS background - Piece of Code
             description: >
                 Integrating the Responsive Images spec together with CSS backgrounds.
     object-oriented-generators:
@@ -233,18 +233,18 @@ entries:
         title: Image optimizers
         content: blog/2017-02-26-image_optimizers.md
 
-    tackling_repsonsive_images-part_2:
+    tackling_responsive_images-part_2:
         date: 2017-02-18
         highlight: false
         type: blog
-        title: Tackling repsonsive images - part 2
+        title: Tackling responsive images - part 2
         teaserTitle: Responsive images (2)
-        content: blog/2017-02-18-tackling_repsonsive_images-part_2.md
+        content: blog/2017-02-18-tackling_responsive_images-part_2.md
 
-    tackling_repsonsive_images-part_1:
+    tackling_responsive_images-part_1:
         date: 2017-02-17
         highlight: true
         type: blog
-        title: Tackling repsonsive images - part 1
+        title: Tackling responsive images - part 1
         teaserTitle: Responsive images (1)
-        content: blog/2017-02-17-tackling_repsonsive_images-part_1.md
+        content: blog/2017-02-17-tackling_responsive_images-part_1.md

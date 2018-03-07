@@ -37,8 +37,7 @@ their file sizes could differ a lot.
 Another approach could be to manually define the most optimal `srcset` for each image.
 This is impossible to do for most websites.
 A website could have lots of images,
-but it's also difficult to know what the most optimal way of scaling down a specific image is,
-without trying out many possibilities.
+and it's also difficult to manually calculate the dimensions for that optimal `srcset`. 
 
 Luckily, computers are very good at tedious calculations on a large scale.
 This approach sounds like a good idea:
@@ -78,9 +77,9 @@ while ($fileSize > 0) {
 
 I won't go into the details of this formula in this post.
 I've [written about it](*https://www.stitcher.io/blog/tackling_repsonsive_images-part_2) before,
-but I do want to make clear that this approach does not brute force multiple variations.
-It will calculate the dimensions needed for ten variations,
-each being approximately 10% smaller in file size.
+but I do want to make clear that this approach will be able to calculate the dimensions for each variation 
+with a 10% reduction in file size, without having to scale that image beforehand.
+That means there's no performance overhead or multiple guesses to know how an image should be scaled.
 
 ## In practice
 
@@ -103,8 +102,8 @@ For example, on an iPhone 7 screen, the fixed width image loads the 800px varian
 while the dynamic version loads the 678px image!
 
 On smaller screens, a simple smartphone for example,
-there are 3 variations available for the dynamic variant,
-while all those screens get the 400px version for the other.
+there are multiple variations available for the dynamic variant,
+while the statically scaled image will always load the 400px image.
 
 Can you imagine doing this by hand?
 Neither can I! Of course I implemented this rendering method into Stitcher,
@@ -132,3 +131,5 @@ To finish off, here are the links which I mentioned at the start of this post.
 [https://ericportis.com/posts/2014/srcset-sizes/](*https://ericportis.com/posts/2014/srcset-sizes/)
 - The official specification website:
 [https://responsiveimages.org/](*https://responsiveimages.org/)
+
+Special thanks to my colleague [Sebastian](*https://twitter.com/sebdedeyne) for reviewing and editing this post.
