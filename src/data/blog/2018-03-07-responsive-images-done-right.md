@@ -76,7 +76,7 @@ while ($fileSize > 0) {
 ```
 
 I won't go into the details of this formula in this post.
-I've [written about it](*https://www.stitcher.io/blog/tackling_repsonsive_images-part_2) before,
+I've [written about it](*https://www.stitcher.io/blog/tackling_responsive_images-part_2) before,
 but I do want to make clear that this approach will be able to calculate the dimensions for each variation 
 with a 10% reduction in file size, without having to scale that image beforehand.
 That means there's no performance overhead or multiple guesses to know how an image should be scaled.
