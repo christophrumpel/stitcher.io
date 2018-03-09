@@ -4,7 +4,7 @@
         This is where the ad would go
     </h3>
     <p>
-        I get it, ads are stupid. I even feel a bit dirty to put them here.
+        I get it, ads are stupid. I even feel dirty putting them here.
         But to be honest, they actually make a difference.
         So maybe you'd consider whitelisting this blog?
     </p>
