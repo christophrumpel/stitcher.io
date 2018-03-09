@@ -151,7 +151,7 @@
     }
 
     footer {
-        margin-top: 2em;
+        padding-top: 0;
 
         @media (max-width: $width-container) {
             padding-left: 1rem;
