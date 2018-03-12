@@ -10,6 +10,8 @@ entries:
         previousPost:
             title: Tackling responsive images
             id: tackling_responsive_images-part_1
+        discuss:
+            reddit: https://www.reddit.com/r/webdev/comments/83souk/responsive_images_done_right/
 
     mysql-show-foreign-key-errors:
         date: 2018-02-13

@@ -31,12 +31,12 @@
 
                 {$post.content}
 
+                {include 'ad.tpl'}
+
                 {if isset($post.discuss)}
                     {include 'blog/discuss.tpl' discuss=$post.discuss}
                 {/if}
             </article>
-
-            {include 'ad.tpl'}
 
             <footer>
                 <nav class="spacer">
