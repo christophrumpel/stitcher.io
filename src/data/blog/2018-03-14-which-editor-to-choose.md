@@ -37,7 +37,7 @@ This isn’t a bad thing, but in this category, Visual Studio Code and Brackets 
 ---
 
 <p>
-    <img src="/img/blog/editors/1.png" class="editor-badge"/>
+    <img src="/img/static/editors/1.png" class="editor-badge"/>
 </p>
 
 ---
@@ -64,7 +64,7 @@ All from within Atom. It’s super easy to update packages and Atom will tell yo
 It shouldn’t surprise you that Atom itself is actually a collection of these same packages.
 
 **Visual Studio Code** as of VSC V0.10.1 there’s extension support, which looks a lot like Sublime’s Package Control.
-Because of the recent popularity of Visual Studio Code, there's a right plugin system rising.
+Because of the recent popularity of Visual Studio Code, there's a big plugin system rising.
 
 Atom is a winner when it comes to packages.
 The whole system is built upon the package manager, and there’s a big community behind it. 
@@ -73,7 +73,7 @@ That should be no surprise, knowing that GitHub is creating this editor.
 ---
 
 <p>
-    <img src="/img/blog/editors/2.png" class="editor-badge"/>
+    <img src="/img/static/editors/2.png" class="editor-badge"/>
 </p>
 
 ---
@@ -113,7 +113,7 @@ but together with Atom’s GIT status you’ll get a good project overview by ju
 ---
 
 <p>
-    <img src="/img/blog/editors/3.png" class="editor-badge"/>
+    <img src="/img/static/editors/3.png" class="editor-badge"/>
 </p>
 
 ---
@@ -148,7 +148,7 @@ But without any doubt: Sublime shines in the field of performance.
 ---
 
 <p>
-    <img src="/img/blog/editors/4.png" class="editor-badge"/>
+    <img src="/img/static/editors/4.png" class="editor-badge"/>
 </p>
 
 ---
@@ -167,7 +167,7 @@ Furthermore, each package has its own configuration page with a lot of documenta
 ---
 
 <p>
-    <img src="/img/blog/editors/5.png" class="editor-badge"/>
+    <img src="/img/static/editors/5.png" class="editor-badge"/>
 </p>
 
 ---
