@@ -1,4 +1,13 @@
 entries:
+    which-editor-to-choose:
+        date: 2015-08-24
+        type: blog
+        title: Which editor to choose?
+        content: 2018-03-14-which-editor-to-choose.md
+        meta:
+            description: Sublime vs. Atom vs. Brackets vs. Visual Studio Code
+            og:description: Sublime vs. Atom vs. Brackets vs. Visual Studio Code
+
     responsive-images-done-right:
         date: 2018-03-07
         type: blog
