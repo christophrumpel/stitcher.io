@@ -12,7 +12,9 @@ Every pane in PHPStorm has several modes and can be configured either by hand or
 Working with non-pinned panes will allow for a much cleaner editor view. 
 Binding certain panes to a key combination will show them at will.
 
-![-](/img/static/phpstorm-power-users/panes.gif)
+<p>
+    <img src="/img/static/phpstorm-power-users/panes.gif"/>
+</p>
 
 ## Auto-imports
 
@@ -33,7 +35,9 @@ By pressing `alt + enter` (`Show Intention Actions`) when on a string, you'll ge
 Things like `replace quotes` to toggle between single- and double quotes, 
 `split string` to.. split the string, and more.
 
-![-](/img/static/phpstorm-power-users/string-actions.gif)
+<p>
+    <img src="/img/static/phpstorm-power-users/string-actions.gif"/>
+</p>
 
 ## Copy paths
 
@@ -51,7 +55,9 @@ Instead of opening the settings to toggle options,
 there are a lot of toggles you can manage from the command palette. 
 For example: show or hide the tab or breadcrumbs bar.
 
-![-](/img/static/phpstorm-power-users/tab-placement.gif)
+<p>
+    <img src="/img/static/phpstorm-power-users/tab-placement.gif"/>
+</p>
 
 ## Custom JVM options
 
@@ -73,7 +79,9 @@ Do you want to know why a word is highlighted or change it?
 There's a command called `Jump to Colors and Fonts` which will allow you to edit 
 the color of your current scheme, for that entry.
 
-![-](/img/static/phpstorm-power-users/colors-and-fonts.gif)
+<p>
+    <img src="/img/static/phpstorm-power-users/colors-and-fonts.gif"/>
+</p>
 
 ## Any more suggestions?
 
