@@ -74,6 +74,10 @@ Besides this "no clutter by default", your code will also align more centered.
 This can be a much more pleasant reading experience. 
 The width of this centered code view is configured in `Settings > Editor > Code Style > Hard wrap at`.
 
+<p>
+    <img src="/img/static/phpstorm-power-users/distraction-free.gif"/>
+</p>
+
 ## Color inspection
 
 Do you want to know why a word is highlighted or change it?
