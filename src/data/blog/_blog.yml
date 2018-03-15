@@ -1,4 +1,13 @@
 entries:
+    phpstorm-tips-for-power-users:
+        date: 2018-03-15
+        type: blog
+        title: PHPStorm tips for power users
+        content: 2018-03-15-phpstorm-tips-for-power-users.md
+        meta:
+            description: A selection of less-known-yet-powerful features of PHPStorm.
+            og:description: A selection of less-known-yet-powerful features of PHPStorm.
+
     which-editor-to-choose:
         date: 2015-08-24
         type: blog
