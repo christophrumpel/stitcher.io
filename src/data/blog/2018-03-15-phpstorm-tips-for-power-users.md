@@ -8,6 +8,7 @@ Every pane in PHPStorm has several modes and can be configured either by hand or
 - `pinned`: automatically hides a pane when not pinned.
 - `floating`: makes the pane float.
 - `windowed`: makes the pane a full-blown window.
+- `split`: to allow multiple panes in one area.
 
 Working with non-pinned panes will allow for a much cleaner editor view. 
 Binding certain panes to a key combination will show them at will.
@@ -25,13 +26,13 @@ in `Settings > Editor > General > Auto Import`.
 ## Code templates
 
 You can change almost every template of auto-generated code in `Settings > Editor > File and Code Templates`
-For example: generate getters and setters without docblocks, generated test function and more.
+For example: generate getters and setters without docblocks, generate test functions in another format and others.
 
 ![-](/img/blog/phpstorm-power-users/code-templates.png)
 
 ## String actions
 
-By pressing `alt + enter` (`Show Intention Actions`) when on a string, you'll get multiple useful actions.
+When pressing `alt + enter` (`Show Intention Actions`) on a string, you'll get multiple useful actions.
 Things like `replace quotes` to toggle between single- and double quotes, 
 `split string` to.. split the string, and more.
 
@@ -53,7 +54,7 @@ but could also be the selected file in the tree view or navigation bar.
 
 Instead of opening the settings to toggle options, 
 there are a lot of toggles you can manage from the command palette. 
-For example: show or hide the tab or breadcrumbs bar.
+For example: show or hide the tabs bar.
 
 <p>
     <img src="/img/static/phpstorm-power-users/tab-placement.gif"/>
@@ -61,7 +62,7 @@ For example: show or hide the tab or breadcrumbs bar.
 
 ## Custom JVM options
 
-PHPStorm runs Java, and there's a file in which you can specify extra options for the JVM
+PHPStorm runs on Java, and there's a file in which you can specify extra options for the JVM
 to optimise performance. I've written about those options [here](/blog/phpstorm-performance).
 
 ## Distraction free mode
