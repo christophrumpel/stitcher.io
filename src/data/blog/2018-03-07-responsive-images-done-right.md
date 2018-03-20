@@ -122,7 +122,6 @@ $model
 <img src="{{ $media->getFullUrl() }}" srcset="{{ $media->getSrcset() }}" sizes="[your own logic]"/>
 ```
 
-We're still working on an official version 7 release, which supports responsive images.
 You can read more about it [here](*https://docs.spatie.be/laravel-medialibrary/v7/responsive-images/getting-started-with-responsive-images).
 
 To finish off, here are the links which I mentioned at the start of this post.
