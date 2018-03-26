@@ -60,6 +60,9 @@ For example: show or hide the tabs bar.
     <img src="/img/static/phpstorm-power-users/tab-placement.gif"/>
 </p>
 
+You can open the command palette with `⌘ ⇧ A` on the default Mac keymap. 
+If you want to lookup the keybinding on your system: the command is called `Find Action`.
+
 ## Custom JVM options
 
 PHPStorm runs on Java, and there's a file in which you can specify extra options for the JVM
