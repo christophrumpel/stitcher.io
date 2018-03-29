@@ -1,5 +1,0 @@
-services:
-    adapter.rss:
-        class: Brendt\Stitcher\Plugin\Rss\RssAdapter
-        arguments:
-            - '@factory.parser'

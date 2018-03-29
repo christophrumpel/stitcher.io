@@ -1,3 +1,13 @@
+/rss:
+    template: blog/rss
+    variables:
+        posts: data/blog/_blog.yml
+    adapters:
+        order:
+            variable: posts
+            field: date
+            direction: -
+
 /:
     template: home
     variables:
@@ -53,17 +63,6 @@
         pagination:
             variable: posts
             entriesPerPage: 6
-
-/rss:
-    template: blog/rss
-    variables:
-        posts: data/blog/_blog.yml
-    adapters:
-        order:
-            variable: posts
-            field: date
-            direction: -
-        rss: true
 
 /piece-of-code:
     template: blog/overview
