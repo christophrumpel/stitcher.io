@@ -26,6 +26,8 @@
             <summary type="html">
                 <![CDATA[ {$post.content} ]]>
             </summary>
+
+            <updated>{date('c', $post.date)}</updated>
         </entry>
     {/foreach}
 </feed>
