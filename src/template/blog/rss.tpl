@@ -7,25 +7,17 @@
     <updated>{date('c')}</updated>
     {foreach $posts as $post}
         <entry>
-            <title>
-                <![CDATA[ {$post.title} ]]>
-            </title>
+            <title><![CDATA[ {$post.title} ]]></title>
 
             <link rel="alternate" href="https://www.stitcher.io/blog/{$post.id}"/>
 
-            <id>
-                https://www.stitcher.io/blog/{$post.id}
-            </id>
+            <id>https://www.stitcher.io/blog/{$post.id}</id>
 
             <author>
-                <name>
-                    <![CDATA[ Brent Roose ]]>
-                </name>
+                <name><![CDATA[ Brent Roose ]]></name>
             </author>
 
-            <summary type="html">
-                <![CDATA[ {$post.content} ]]>
-            </summary>
+            <summary type="html"><![CDATA[ {$post.content} ]]></summary>
 
             <updated>{date('c', $post.date)}</updated>
         </entry>
