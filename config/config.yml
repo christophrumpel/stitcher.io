@@ -1,5 +1,6 @@
 plugins:
     - Brendt\Stitcher\Plugin\PortfolioPlugin
+    - Brendt\Stitcher\Plugin\RssPlugin
 
 environment: live
 
