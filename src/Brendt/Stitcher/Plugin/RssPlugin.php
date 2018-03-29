@@ -21,7 +21,7 @@ class RssPlugin implements Plugin, EventSubscriberInterface {
     {
         $pageId = $event->getData()['pageId'] ?? null;
 
-        if ($pageId !== 'rss') {
+        if ($pageId !== '/rss') {
             return;
         }
 
