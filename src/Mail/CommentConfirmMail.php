@@ -24,6 +24,8 @@ class CommentConfirmMail implements Mail
 
     public function body(): string
     {
+        $host = env('HOST');
+
         $commentId = $this->comment['id'];
 
         $postId = $this->comment['postId'];
@@ -31,9 +33,9 @@ class CommentConfirmMail implements Mail
         $commentBody = $this->comment['body'];
 
         return <<<MD
-# Confirm your comment
+# Please confirm your comment
 
-Thanks for leaving a comment! Please confirm it by clicking [here](https://www.stitcher.io/comments/$postId/$commentId/verify).
+Thanks for leaving a comment! Please confirm it by clicking [here]($host/comments/$postId/$commentId/verify).
 
 $commentBody
 
