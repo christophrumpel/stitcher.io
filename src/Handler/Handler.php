@@ -14,4 +14,11 @@ abstract class Handler
             ->withHeader('Content-Type', 'application/json')
             ->withBody(stream_for(json_encode(['data' => $data])));
     }
+
+    protected function redirect(string $to): Response
+    {
+        return (new Response())
+            ->withStatus(302)
+            ->withHeader('Location', $to);
+    }
 }

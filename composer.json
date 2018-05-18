@@ -3,7 +3,8 @@
         "pageon/stitcher-core": "dev-develop",
         "mrclay/minify": "^3.0",
         "ramsey/uuid": "^3.7",
-        "nesbot/carbon": "^1.27"
+        "nesbot/carbon": "^1.27",
+        "swiftmailer/swiftmailer": "^6.0"
     },
     "require-dev": {
         "larapack/dd": "^1.1"

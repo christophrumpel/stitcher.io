@@ -29,3 +29,4 @@ $router->get('/rss', RssHandler::class);
 
 $router->get('/comments/{postId}', Comments\Show::class);
 $router->post('/comments/{postId}', Comments\Store::class);
+$router->get('/comments/{postId}/{commentId}/verify', Comments\Verify::class);

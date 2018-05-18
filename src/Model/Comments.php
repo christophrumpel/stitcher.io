@@ -45,10 +45,26 @@ final class Comments
         });
     }
 
-    public function store(array $data): void
+    public function verify(string $commentId): void
+    {
+        foreach ($this->comments as &$comment) {
+            if ($comment['id'] !== $commentId) {
+                continue;
+            }
+
+            $comment['verified'] = true;
+
+            break;
+        }
+
+        $this->save();
+    }
+
+    public function store(string $postId, array $data): array
     {
         $comment = [
             'id' => (string) Uuid::uuid4(),
+            'postId' => $postId,
             'email' => $data['email'] ?? null,
             'body' => $this->markdownParser->parse(strip_tags($data['body'] ?? null)),
             'time' => Carbon::now()->toIso8601String(),
@@ -59,7 +75,9 @@ final class Comments
 
         $this->comments[] = $comment;
 
-        file_put_contents($this->file, json_encode($this->comments, JSON_PRETTY_PRINT));
+        $this->save();
+
+        return $comment;
     }
 
     private function validate(array $comment): void
@@ -67,5 +85,10 @@ final class Comments
         if (in_array(null, $comment, true)) {
             throw new ValidationException();
         }
+    }
+
+    private function save(): void
+    {
+        file_put_contents($this->file, json_encode($this->comments, JSON_PRETTY_PRINT));
     }
 }
