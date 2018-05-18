@@ -1,0 +1,119 @@
+<section class="comments">
+    <h2>Comments</h2>
+
+    <div class="comments-list">
+        <p>
+            There are no comments yet.
+        </p>
+    </div>
+
+    <div class="highlight">
+        <h3>Would you like to share your thoughts?</h3>
+
+        <form class="comment-form" onsubmit="return submitComment()">
+            <fieldset>
+                <div class="form-row half">
+                    <label>
+                        Name:
+
+                        <input type="text" name="name" required value=""/>
+                    </label>
+
+                    <label>
+                        E-mail address:
+
+                        <input type="email" name="email" required value=""/>
+                    </label>
+                </div>
+
+                <small>Your e-mail address is not stored and only used for confirmation.</small>
+
+                <div class="form-row">
+                    <label>
+                        Comment:
+
+                        <textarea name="body" cols="30" rows="4"></textarea>
+                    </label>
+
+                    <small>You may use MarkDown.</small>
+                </div>
+
+                <div class="form-row">
+                    <input type="submit" class="cta cta-light cta-small" value="Submit"/>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+
+    <div class="comment-success alert alert-success hidden">
+        <p>
+            Thanks you for submitting your comment!
+            <br>We've sent you an e-mail with a confirmation link.
+        </p>
+    </div>
+
+    <div class="comment-error alert alert-error hidden">
+        <p>
+            Unfortunately, something went wrong..
+        </p>
+    </div>
+</section>
+
+<script>
+    document.addEventListener('DOMContentLoaded', loadComments);
+
+    function loadComments() {
+        fetch('/comments/{{ post.id }}')
+            .then(response => {
+                if (response.status !== 200) {
+                    throw new Error();
+                }
+
+                return response.json();
+            })
+            .then(json => {
+                const data = json.data;
+
+                if (! data.length) {
+                    return;
+                }
+
+                document.querySelector('.comments-list').innerHTML = data.map(comment => `
+                    <div class="comment">
+                        <h3>${comment.name} wrote on ${comment.time_formatted}</h3>
+                        ${comment.body}
+                    </div>
+                `).reduce((result, current) => result + current);
+            });
+    }
+
+    function submitComment() {
+        const data = {
+            email: input('email'),
+            name: input('name'),
+            body: input('body'),
+        }
+
+        document.querySelector('.comment-form fieldset').disabled = true;
+
+        fetch('/comments/{{ post.id }}', {
+            method: 'POST',
+            body: JSON.stringify(data),
+            headers: {
+                'content-type': 'application/json'
+            }
+        }).then(() => {
+            document.querySelector('.comment-success').classList.remove('hidden');
+        }).catch(() => {
+            document.querySelector('.comment-error').classList.remove('hidden');
+        });
+
+        return false;
+    }
+
+    function input(name) {
+        const input = document.querySelector(`*[name=${name}]`);
+
+        return input ? input.value : null;
+    }
+</script>

@@ -48,12 +48,19 @@ div.center > p {
     font-family: $font-title;
     transition: all 100ms ease-out;
     border: 2px solid darken(#fff, 6);
+    cursor: pointer;
 }
 
 .cta-light {
     background-color: #fff;
     color: #000;
     padding: 1em 2em;
+}
+
+.cta-small {
+    padding: .7em 1em;
+    font-size: .8em;
+    border-width: 2px;
 }
 
 .cta:hover {
@@ -87,7 +94,6 @@ div.center > p {
 
 .ad-container {
     @include wrapper();
-    margin-bottom: 4rem;
 }
 
 .adsbygoogle {
@@ -95,4 +101,56 @@ div.center > p {
     padding: 2rem 0;
     margin-left: auto;
     margin-right: auto;
+}
+
+.comments {
+    margin-bottom: 4rem;
+}
+
+.comment {
+    padding-bottom: .2em;
+}
+
+.comments p {
+    font-size: 1.2em;
+    font-family: $font-body;
+}
+
+.comment h1,
+.comment h2,
+.comment h3,
+.comment h4,
+.comment h5 {
+    font-size: 1.1rem;
+    font-weight: normal;
+    border-bottom: none;
+}
+
+.highlight {
+    margin-top: 1em;
+    padding: .8em 0 1em;
+    background-color: #fafafa;
+}
+
+.alert {
+    padding: 1em;
+    color: $color-white;
+
+    p {
+        font-family: $font-title;
+        font-size: 1em;
+        margin-bottom: 0;
+    }
+}
+
+.alert-success {
+    background-color: $color-green;
+}
+
+.alert-error {
+    background-color: $color-red;
+}
+
+.hidden {
+    display: none;
 }

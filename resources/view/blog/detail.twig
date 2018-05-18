@@ -23,6 +23,8 @@
 
     {% include '_partials/ad.twig' %}
 
+    {% include 'blog/comments.twig' with {'post': post} %}
+
     <footer>
         <nav class="spacer">
             <a class="cta cta-light" href="/blog/page-1">Back</a>

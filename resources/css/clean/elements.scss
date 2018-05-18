@@ -224,3 +224,55 @@ hr {
     margin: 2rem auto;
     opacity: 0;
 }
+
+form {
+    @include wrapper();
+    font-family: $font-body;
+}
+
+label {
+    font-size: 1.2em;
+}
+
+form small {
+    margin-top: .2em;
+    display: block;
+}
+
+label > textarea,
+label > input {
+    display: block;
+    border: 1px solid $color-gray;
+    margin-top: .2em;
+    font-size: .9em;
+    font-family: $font-body;
+    padding: 5px 8px;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    max-width: 100%;
+    color: $color-black;
+}
+
+.form-row {
+    margin-top: 1em;
+}
+
+.form-row.half {
+    display: flex;
+
+    & > *:first-child {
+        margin-right: 10px;
+    }
+
+    & > * {
+        flex: 1 1 50%;
+    }
+}
+
+fieldset {
+    border: none;
+    padding: 0;
+}

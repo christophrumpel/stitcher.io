@@ -35,14 +35,18 @@ final class Comments
 
     public function all(): array
     {
-        return $this->comments;
+        return array_map(function (array $comment) {
+            $comment['time_formatted'] = Carbon::createFromTimeString($comment['time'])->format('F d, Y');
+
+            return $comment;
+        }, $this->comments);
     }
 
     public function verified(): array
     {
-        return array_filter($this->comments, function ($comment) {
+        return array_values(array_filter($this->all(), function ($comment) {
             return $comment['verified'] ?? false;
-        });
+        }));
     }
 
     public function verify(string $commentId): void
@@ -66,6 +70,7 @@ final class Comments
             'id' => (string) Uuid::uuid4(),
             'postId' => $postId,
             'email' => $data['email'] ?? null,
+            'name' => $data['name'] ?? null,
             'body' => $this->markdownParser->parse(strip_tags($data['body'] ?? null)),
             'time' => Carbon::now()->toIso8601String(),
             'verified' => false
@@ -89,6 +94,12 @@ final class Comments
 
     private function save(): void
     {
-        file_put_contents($this->file, json_encode($this->comments, JSON_PRETTY_PRINT));
+        $comments = array_map(function (array $comment) {
+            unset($comment['email']);
+
+            return $comment;
+        }, $this->comments);
+
+        file_put_contents($this->file, json_encode($comments, JSON_PRETTY_PRINT));
     }
 }
