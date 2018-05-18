@@ -1,5 +1,6 @@
 <?php
 
+use Brendt\Stitcher\Handler\Comments;
 use Brendt\Stitcher\Handler\RssHandler;
 
 $redirects = [
@@ -25,3 +26,6 @@ foreach ($redirects as $url => $targetUrl) {
 }
 
 $router->get('/rss', RssHandler::class);
+
+$router->get('/comments/{postId}', Comments\Show::class);
+$router->post('/comments/{postId}', Comments\Store::class);
