@@ -108,20 +108,34 @@ div.center > p {
 }
 
 .comment {
-    padding-bottom: .2em;
+    @include wrapper();
+
+    max-width: 650px;
+    margin-left: calc(50vw - 400px);
+
+    padding: .2em 1.8em .8em;
+    background-color: #fafafa;
+}
+
+.comment li {
+    font-size: 1em;
+}
+
+.comment + .comment {
+    margin-top: 1em;
 }
 
 .comments p {
     font-size: 1.2em;
     font-family: $font-body;
+    padding-right: 0;
 }
 
 .comment h1,
 .comment h2,
-.comment h3,
 .comment h4,
 .comment h5 {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     font-weight: normal;
     border-bottom: none;
 }
@@ -153,4 +167,8 @@ div.center > p {
 
 .hidden {
     display: none;
+}
+
+.text-right {
+    text-align: right;
 }

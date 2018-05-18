@@ -225,5 +225,3 @@ feel free to reach out to me on via [Twitter](*https://twitter.com/brendt_gd) or
 
 Also special thanks to [/u/ImSuperObjective2](*https://www.reddit.com/user/ImSuperObjective2) on Reddit
 and my colleague [Sebastian](*https://twitter.com/sebdedeyne) for proof reading this post.
-
----
