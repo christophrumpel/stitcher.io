@@ -70,7 +70,7 @@ final class Comments
             'id' => (string) Uuid::uuid4(),
             'postId' => $postId,
             'email' => $data['email'] ?? null,
-            'name' => $data['name'] ?? null,
+            'name' => strip_tags($data['name'] ?? null),
             'body' => $this->markdownParser->parse(strip_tags($data['body'] ?? null)),
             'time' => Carbon::now()->toIso8601String(),
             'verified' => false
