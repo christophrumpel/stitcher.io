@@ -1,7 +1,14 @@
+merging-arrays-in-php:
+    date: 2018-08-30
+    title: Merging arrays in PHP
+    content: src/content/blog/2018-08-30-merging-arrays-in-php.md
+    meta:
+        description: "The difference between array_merge and + in PHP."
+
 new-in-php-73:
-    date: 2018-11-01
+    date: 2018-08-24
     title: New in PHP 7.3
-    content: src/content/blog/new-in-php-73.md
+    content: src/content/blog/2018-08-24-new-in-php-73.md
     meta:
         description: "PHP 7.3 has trailing function call commas, flexible Heredoc, the is_countable function and more."
 
